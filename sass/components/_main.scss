@@ -1,0 +1,191 @@
+@import "module/variables";
+
+main {
+	margin: 100px 0;
+	> header {
+		margin-bottom: $medium-gutter;
+	}
+
+/***** Front page *****/	
+	.intro {
+		.video-container {
+			max-width: 750px;
+			margin: $medium-gutter 0;
+			.video {
+				position: relative;
+				padding-bottom: 56.25%;
+				background: #000;
+				float: none;
+				clear: both;
+				width: 100%;
+				height: 0;
+				iframe {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		aside {
+			@media (min-width: 1200px) {
+				float: right;
+				width: 30%;
+				padding-left: $medium-gutter;
+				margin-top: -350px;
+			}
+			@media (min-width: 1280px) {
+				padding-left: 0;
+			}
+		}
+	}
+
+/***** About page *****/
+	.about {
+		img {
+			margin-bottom: $small-gutter;
+			@media (min-width: 768px) {
+				width: 45%;
+				margin-right: 10%;
+				float: left;
+			}
+		}
+		.patrick {
+			@media (min-width: 768px) {
+				margin-right: 0;
+				float: right;
+			}
+		}
+	}
+	.connections {
+		img {
+			margin: $medium-gutter 0;
+		}
+	}
+}
+
+/***** Courses page *****/
+.connections {
+	@media(min-width: 768px) {
+		clear: both;
+		img {
+			float: left;
+			width: 50%;
+			margin-right: 5% !important;
+		}
+		aside {
+			margin-top: $small-gutter;
+			float: right;
+			width: 45%;
+		}
+		footer {
+			clear: left;
+		}
+		.quote {
+			margin-top: $small-gutter;
+		}
+	}
+	@media (min-width: 1200px) {
+		aside {
+			margin-top: 150px;
+		}
+	}
+}
+
+.beginners-course,
+.intermediate-course,
+.advanced-course {
+
+	@media (min-width: 960px) {
+		clear: both;
+		margin-top: 100px;
+		
+		header,
+		.course-info {
+			float: left;
+			width: 60%;
+			margin-right: 10%;
+		}
+		.course-info {
+			margin-bottom: 100px;
+		}
+		.sidebar {
+			width: 30%;
+			float: right;
+			margin-top: -130px;
+		}
+	}
+}
+
+.course-info {
+	h3 {
+		width: fit-content;
+		margin-top: $medium-gutter;
+		padding-bottom: 10px;
+	}
+}
+.sidebar {
+	margin-top: $medium-gutter;
+}
+
+/***** Contact page *****/
+.contact-informations {
+	margin-bottom: $gutter;
+	@media (min-width: 960px) {
+		float: left;
+		width: 30%;
+		margin-right: 10%;
+	}
+}
+.contact-form {
+	input {
+		width: 100%;
+		padding: 7px 0;
+		margin-bottom: $small-gutter;
+		-webkit-appearance: none;
+		border-radius: 0px;
+	}
+	textarea {
+		width: 100%;
+		margin-bottom: $medium-gutter;
+		-webkit-appearance: none;
+		border-radius: 0px;
+	}
+	input[type="submit"] {
+		@include book-now;
+		border: none;
+		font-family: 'Roboto', sans-serif;
+		font-size: 20px;
+		font-weight: 500;
+		padding: 20px 0;
+		&:hover {
+			cursor: pointer;
+		}
+		@media (min-width: 768px) {
+			width: 30%;
+		}
+	}
+	@media (min-width: 960px) {
+		float: right;
+		width: 60%;
+	}
+}
+
+/***** Terms and conditions page *****/
+.terms,
+.student-terms,
+.model-terms {
+	li {
+		list-style-type: disc;
+		margin-left: $small-gutter;
+	}
+}
+.terms {
+	h2 {
+		margin-top: $gutter;
+	}
+}
+
+.terms,
+.student-terms {
+	margin-bottom: $gutter;
+}

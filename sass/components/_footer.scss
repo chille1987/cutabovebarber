@@ -1,0 +1,102 @@
+#footer {
+	padding: $medium-gutter $small-gutter 0;
+	@media (min-width: 768px) {
+		padding: $medium-gutter $medium-gutter 0;
+	}
+	@media (min-width: 1200px) {
+		padding: $gutter 0 0 0;
+		@include grid;
+		grid-template-columns: 1fr repeat(6, minmax(0,$column)) 1fr;
+		grid-column-gap: $gutter;
+		-ms-grid-columns: 1fr minmax(0,$column) $gutter minmax(0,$column) $gutter minmax(0,$column) $gutter minmax(0,$column) $gutter minmax(0,$column) $gutter minmax(0,$column) 1fr;
+	}
+	div {
+		margin-bottom: $medium-gutter;
+		h3 {
+			margin-bottom: $small-gutter;
+			padding-bottom: $small-gutter;
+		}
+		ul {
+			li {
+				display: inline-block;
+				a {
+					text-transform: uppercase;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	.caba {
+		@media (min-width: 1200px) {
+			grid-column: 2 / 5;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 5;
+			-ms-grid-row: 1;
+			-ms-grid-row-span: 1;
+			width: initial;
+			margin-right: 0;
+		}
+	}
+	.contact {
+		a {
+			display: block;
+		}
+		strong {
+			font-weight: 500;
+			display: block;
+		}
+		@media (min-width: 768px) {
+			width: 45%;
+			margin-right: 10%;
+			float: left;
+		}
+		@media (min-width: 1200px) {
+			grid-column: 5 / 7;
+			-ms-grid-column: 8;
+			-ms-grid-column-span: 4;
+			-ms-grid-row: 1;
+			-ms-grid-row-span: 1;
+			width: initial;
+			margin-right: 0;
+		}
+	}
+	.follow-us {
+		@media (min-width: 768px) {
+			width: 45%;
+			margin-right: 0;
+			float: right;
+		}
+		@media (min-width: 1200px) {
+			grid-column: 7 / 8;
+			-ms-grid-column: 11;
+			-ms-grid-column-span: 3;
+			-ms-grid-row: 1;
+			-ms-grid-row-span: 1;
+			width: initial;
+			margin-right: 0;
+		}
+	}
+	.socket {
+		margin: 0 -20px;
+		padding: $small-gutter;
+		text-align: center;
+		@media (min-width: 768px) {
+			margin: 0 -40px;
+			clear: left;
+		}
+		@media (min-width: 1200px) {
+			grid-column: 1 / -1;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 13;
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			margin: 0;
+		}
+		a {
+			text-transform: uppercase;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+}

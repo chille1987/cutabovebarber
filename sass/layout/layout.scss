@@ -1,0 +1,126 @@
+@import "module/mixins";
+@import "module/variables";
+
+.wrapper {
+	@include grid;
+	grid-template-columns: $small-gutter 1fr $small-gutter;
+	-ms-grid-columns: $small-gutter 1fr $small-gutter;
+	@media (min-width: 768px) {
+		grid-template-columns: $medium-gutter 1fr $medium-gutter 1fr $medium-gutter;
+		-ms-grid-columns: $medium-gutter 1fr $medium-gutter 1fr $medium-gutter;
+	}
+	@media (min-width: 1200px) {
+		grid-template-columns: 1fr repeat(6, minmax(0,$column)) 1fr;
+		grid-column-gap: $gutter;
+		-ms-grid-columns: 1fr minmax(0,$column) $gutter minmax(0,$column) $gutter minmax(0,$column) $gutter minmax(0,$column) $gutter minmax(0,$column) $gutter minmax(0,$column) 1fr;
+	}
+
+	#header {
+		grid-column: 1 / 4;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 3;
+		grid-row: 1 / 2;
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		@media(min-width: 768px) {
+			grid-column: 1 / 6;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 5;
+		}
+		@media(min-width: 1200px) {
+			grid-column: 1 / 9;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 13;
+		}
+	}
+	main {
+		grid-column: 2 / 3;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-row: 2 / 3;
+		-ms-grid-row: 2;
+		-ms-grid-row-span: 1;
+		@media(min-width: 768px) {
+			grid-column: 2 / 5;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 3;
+		}
+		@media(min-width: 1200px) {
+			grid-column: 2 / 8;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 11;
+		}
+	}
+	.google-maps {
+		grid-column: 1 / 4;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 3;
+		grid-row: 3 / 4;
+		-ms-grid-row: 3;
+		-ms-grid-row-span: 1;
+		@media(min-width: 768px) {
+			grid-column: 1 / 6;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 5;
+		}
+		@media(min-width: 1200px) {
+			grid-column: 1 / 9;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 33;
+		}
+	}
+	.courses {
+		grid-column: 2 / 3;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-row: 4 / 5;
+		-ms-grid-row: 4;
+		-ms-grid-row-span: 1;
+		@media(min-width: 768px) {
+			grid-column: 2 / 5;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 3;
+		}
+		@media(min-width: 1200px) {
+			grid-column: 2 / 8;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 11;
+		}
+	}
+	.what-students-say {
+		grid-column: 1 / 4;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 3;
+		grid-row: 5 / 6;
+		-ms-grid-row: 5;
+		-ms-grid-row-span: 1;
+		@media(min-width: 768px) {
+			grid-column: 1 / 6;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 5;
+		}
+		@media(min-width: 1200px) {
+			grid-column: 2 / 8;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 11;
+		}
+	}
+	#footer {
+		grid-column: 1 / 4;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 3;
+		grid-row: 6 / 7;
+		-ms-grid-row: 6;
+		-ms-grid-row-span: 1;
+		@media(min-width: 768px) {
+			grid-column: 1 / 6;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 5;
+		}
+		@media(min-width: 1200px) {
+			grid-column: 1 / 9;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 13;
+		}
+	}
+}

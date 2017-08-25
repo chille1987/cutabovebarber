@@ -1,0 +1,142 @@
+@import "module/variables";
+
+#header {
+	background: $red;
+	.menu {
+		li {
+			a {
+				color: $orange;
+			}
+		}
+	}
+	.last {
+		background: $orange;
+		color: $red;
+	}
+	.caption {
+		background: $red;
+		h2 {
+			color: $orange;
+		}
+	}
+}
+/***** Mobile Menu *****/
+#my-menu {
+	background: $white;
+	.mm-title {
+		color: $red;
+	}
+	.mm-navbar {
+		border-color: $orange;
+	}
+	.mm-listview {
+		li {
+			border-color: $orange;
+			a {
+				color: $red;
+			}
+		}
+	}
+}
+
+address {
+	a {
+		color: $gray;
+		&:hover {
+			color: $orange;
+		}
+	}
+	strong {
+		color: $red;
+	}
+}
+
+h1, h2 {
+	color: $red;
+	border-bottom: 2px solid $orange;
+}
+
+p {
+	color: $gray;
+}
+
+.quote {
+	color: $orange;
+}
+/***** Course teasers *****/
+.course-1,
+.course-2,
+.course-3 {
+	background: $lightgray;
+	header {
+		background: $red;
+		h3 {
+			color: $orange;
+			background: $red;
+		}
+	}
+	.read-more, h4{
+		color: $red;
+	}
+}
+
+.course-info {
+	h3 {
+		color: $red;
+	}
+}
+
+.sidebar {
+	h3 {
+		color: $red;
+		border-bottom: 2px solid $orange;
+	}
+}
+
+.slider {
+	div {
+		h3 {
+			color: $red;
+		}
+	}
+}
+
+.contact-form {
+	label {
+		color: $red;
+	}
+	input, textarea {
+		border: 1px solid $red;
+	}
+}
+/***** Footer *****/
+#footer {
+	background: $red;
+	h3 {
+		color: $orange;
+		border-bottom: 2px solid $orange;
+	}
+	a, p {
+		color: $white;
+	}
+	.contact {
+		strong {
+			color: $orange;
+		}
+	}
+	div {
+		a:hover {
+			color: $orange;
+		}
+	}
+	.socket {
+		background: $orange;
+		p, a {
+			color: $red;
+		}
+		a:hover {
+			color: $red;
+			text-decoration: underline;
+		}
+	}
+}

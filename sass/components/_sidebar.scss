@@ -1,0 +1,18 @@
+.sidebar {
+	border: 1px solid $gray;
+	padding: $medium-gutter $small-gutter;
+	margin-bottom: $gutter;
+	div {
+		h3 {
+			padding-bottom: $small-gutter;
+			margin-bottom: $medium-gutter;
+		}
+		ul{
+			margin-bottom: $medium-gutter;
+			li{
+				list-style-type: disc;
+				margin-left: $small-gutter;
+			}
+		}
+	}
+}

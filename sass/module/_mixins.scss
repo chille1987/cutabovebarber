@@ -1,0 +1,47 @@
+@mixin h1 {
+	font-size: 36px;
+	margin-bottom: $medium-gutter;
+	padding-bottom: $small-gutter;
+	@media (min-width: 768px) {
+		font-size: 47px;
+	}
+	@media (min-width: 960px) {
+		font-size: 61px;
+	}
+}
+@mixin h2 {
+	font-size: 31px;
+	margin-bottom: $medium-gutter;
+	padding-bottom: $small-gutter;
+	@media (min-width: 768px) {
+		font-size: 40px;
+	}
+	@media (min-width: 960px) {
+		font-size: 52px;
+	}
+}
+@mixin h3 {
+	font-size: 24px;
+	@media (min-width: 768px) {
+		font-size: 31px;
+	}
+}
+
+@mixin grid {
+	display: grid;
+	display: -ms-grid;
+}
+
+@mixin book-now {
+	background: $orange;
+	color: $red;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px 0;
+	font-weight: 500;
+	&:hover {
+		text-decoration: underline;
+	}
+}

@@ -1,0 +1,120 @@
+/***** Front page courses *****/
+.course-teasers {
+	
+	@media (min-width: 768px) {
+		@include grid;
+		grid-template-columns: 1fr 1fr;
+		-ms-grid-columns: 1fr 1fr;
+		.course-1, .course-3 {
+			margin-right: $small-gutter;
+		}
+		.course-2 {
+			margin-left: $small-gutter;
+		}
+		/***** Internet Explorer *****/
+		.course-1 {
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			-ms-grid-row: 1;
+			-ms-grid-row-span: 1;
+		}
+		.course-2 {
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 1;
+			-ms-grid-row: 1;
+			-ms-grid-row-span: 1;
+		}
+		.course-3 {
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+		}
+	}
+	@media (min-width: 1200px) {
+		grid-template-columns: 1fr 1fr 1fr;
+		-ms-grid-columns: 1fr $gutter 1fr $gutter 1fr;
+		grid-column-gap: $gutter;
+		.course-1, .course-2, .course-3 {
+			margin-right: 0;
+			margin-left: 0;
+		}
+		/***** Internet Explorer *****/
+		.course-1 {
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+		}
+		.course-2 {
+			-ms-grid-column: 3;
+			-ms-grid-column-span: 1;
+		}
+		.course-3 {
+			-ms-grid-column: 5;
+			-ms-grid-column-span: 1;
+			-ms-grid-row: 1;
+			-ms-grid-row-span: 1;	
+		}
+		
+	}
+	.course-1,
+	.course-2,
+	.course-3 {
+		margin-bottom: $gutter;
+		header {
+			position: relative;
+			margin-bottom: $small-gutter;
+			h3 {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				padding: $small-gutter;
+			}
+		}
+		p,.read-more,h4 {
+			margin: 0 $small-gutter;
+		}
+		.book-now, hr {
+			margin: $small-gutter;
+		}
+		h4 {
+			font-weight: 500;
+		}
+	}
+}
+
+/***** Front page testimonials *****/
+.what-students-say {
+	padding: $gutter $small-gutter;
+	@media (min-width: 768px) {
+		padding: $gutter $medium-gutter;
+	}
+	@media (min-width: 1200px) {
+		padding: $gutter 0;
+	}
+	.slider {
+		position: relative;
+		div {
+			img {
+				border-radius: 50%;
+				float: left;
+				margin-right: $small-gutter;
+			}
+			h3, em {
+				margin-top: $gutter;
+			}
+		}
+		.slick-dots li.slick-active button:before {
+			color: $red;
+		}
+		.slick-dots li button:before {
+			font-size: 10px;
+		}
+	}
+}
+
+/***** Contact page google maps *****/
+.google-maps {
+	iframe {
+		float: left;
+		width: 100%;
+		height: 450px;
+	}
+}

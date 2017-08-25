@@ -1,0 +1,60 @@
+@import "reset";
+@import "module/variables";
+@import "typography";
+
+/***** Visually Hide text 
+Text remains accessible to AT such as Screen Readers *****/
+
+.visually-hidden {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+/*** Menu Icon ***/
+#menu-button {
+	width: 30px;
+	  height: 20px;
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  margin-top: 45px;
+	  margin-right: 20px;
+	  -webkit-transition: .5s ease-in-out;
+	  -moz-transition: .5s ease-in-out;
+	  -o-transition: .5s ease-in-out;
+	  transition: .5s ease-in-out;
+	  cursor: pointer;
+	div {
+	    display: block;
+		position: absolute;
+		height: 3px;
+		width: 100%;
+		background: $orange;
+		opacity: 1;
+		left: 0;
+	}
+	.bar1 {
+		top: 0px;
+	}
+	.bar2 {
+		top: 10px;
+	}
+	.bar3 {
+		top: 20px;
+	}
+}
+
+
+strong {
+	font-weight: 500;
+}
+
+h1, h2 {
+	width: fit-content;
+}

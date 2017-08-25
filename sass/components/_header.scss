@@ -1,0 +1,125 @@
+@import "module/variables";
+@import "module/mixins";
+#header {
+	padding-top: 10px;
+	@media (min-width: 1200px) {
+		@include grid;
+		grid-template-columns: 1fr repeat(6, minmax(0, $column)) 1fr;
+		grid-column-gap: $gutter;
+		-ms-grid-columns: 1fr minmax(0,$column) $gutter minmax(0,$column) $gutter minmax(0,$column) $gutter minmax(0,$column) $gutter minmax(0,$column) $gutter minmax(0,$column) 1fr;
+	}
+
+	.branding {
+		margin-left: $small-gutter;
+		@media (min-width: 768px) {
+			margin-left: $medium-gutter;
+		}
+		@media (min-width: 1200px) {
+			grid-column: 2 / 3;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 1;
+			grid-row: 1 / 2;
+			-ms-grid-row: 1;
+			-ms-grid-row-span: 1;
+			margin-left: 0;
+		}
+	}
+
+	.main-menu {
+		display: none;
+		@media (min-width: 768px) {
+			display: inline-block;
+			text-align: right;
+			margin-top: -70px;
+			float: right;
+			margin-right: $medium-gutter;
+			.menu {
+				li {
+					display: inline-block;
+					margin-left: $small-gutter;
+					a {
+						text-transform: uppercase;
+						&:hover {
+							color: lighten($orange, 10%);
+						}
+					}
+				}
+			}
+			.dropdown {
+				position: absolute;
+				background: $red;
+				padding: $small-gutter;
+				right: 0;
+				width: 460px;
+				margin-top: 35px;
+				text-align: left;
+				li {
+					display: block;
+				}
+			}
+		}
+		@media (min-width: 1200px) {
+			grid-column: 4 / 8;
+			-ms-grid-column: 7;
+			-ms-grid-column-span: 6;
+			grid-row: 1 / 2;
+			-ms-grid-row: 1;
+			-ms-grid-row-span: 1;
+			margin-top: 25px;
+			margin-right: 0;
+		}
+	}
+
+	> img {
+		@media (min-width: 1200px) {
+			grid-column: 1 / 9;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 13;
+			grid-row: 2 / 3;
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+		}
+	}
+
+	.caption {
+		padding: 20px;
+		h2 {
+			border-bottom: none !important;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		@media (min-width: 768px) {
+			padding: $small-gutter $medium-gutter;
+		}
+		@media (min-width: 1200px) {
+			grid-column: 2 / 6;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 7;
+			grid-row: 2 / 3;
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			align-self: end;
+			-ms-grid-row-align: end;
+		}
+	}
+	
+	#menu-button {
+		@media (min-width: 768px) {
+			display: none;
+		}
+	}
+}
+
+#my-menu {
+	.mm-listview {
+		margin-top: $small-gutter;
+		li {
+			a {
+				font-size: 20px;
+			}
+		}
+	}
+	@media (min-width: 768px) {
+		display: none;
+	}
+}
