@@ -25,7 +25,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, main, section {
   display: block; }
 
 body {
@@ -134,23 +134,12 @@ Text remains accessible to AT such as Screen Readers *****/
 .visually-hidden {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
-  clip-path: inset(50%) !important;
   height: 1px !important;
   overflow: hidden !important;
   padding: 0 !important;
   position: absolute !important;
   width: 1px !important;
   white-space: nowrap !important; }
-
-/* Remain focusable, e.g. when using skip-links */
-.visually-hidden--focusable:focus,
-.visually-hidden--focusable:active {
-  clip-path: none !important;
-  height: auto !important;
-  overflow: visible !important;
-  position: static !important;
-  width: auto !important;
-  white-space: normal !important; }
 
 /*** Menu Icon ***/
 #menu-button {
