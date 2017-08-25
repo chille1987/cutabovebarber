@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Lora|Roboto:400,400i,500,500i");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  overflow-x: hidden; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 1.6; }
+
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+  line-height: 1.2; }
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  padding-bottom: 20px; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 47px; } }
+  @media (min-width: 960px) {
+    h1 {
+      font-size: 61px; } }
+
+h2 {
+  font-size: 31px;
+  margin-bottom: 40px;
+  padding-bottom: 20px; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 40px; } }
+  @media (min-width: 960px) {
+    h2 {
+      font-size: 52px; } }
+
+h3 {
+  font-size: 24px; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 31px; } }
+
+p {
+  margin-bottom: 1em; }
+  @media (max-width: 767px) {
+    p {
+      font-size: .9em; } }
+
+.quote {
+  font-style: italic;
+  font-family: 'Lora', serif;
+  font-size: 24px; }
+  @media (min-width: 960px) {
+    .quote {
+      font-size: 28px; } }
+
+@media (min-width: 768px) {
+  .connections .quote {
+    font-size: 30px; } }
+@media (min-width: 960px) {
+  .connections .quote {
+    font-size: 36px; } }
+
+a {
+  text-decoration: none; }
+
+.book-now {
+  background: #f5941d;
+  color: #682638;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-weight: 500; }
+  .book-now:hover {
+    text-decoration: underline; }
+
+#footer div a, #footer div p {
+  font-size: 18px; }
+
+/***** Visually Hide text 
+Text remains accessible to AT such as Screen Readers *****/
+.visually-hidden {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important; }
+
+/* Remain focusable, e.g. when using skip-links */
+.visually-hidden--focusable:focus,
+.visually-hidden--focusable:active {
+  clip-path: none !important;
+  height: auto !important;
+  overflow: visible !important;
+  position: static !important;
+  width: auto !important;
+  white-space: normal !important; }
+
+/*** Menu Icon ***/
+#menu-button {
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 45px;
+  margin-right: 20px;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer; }
+  #menu-button div {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #f5941d;
+    opacity: 1;
+    left: 0; }
+  #menu-button .bar1 {
+    top: 0px; }
+  #menu-button .bar2 {
+    top: 10px; }
+  #menu-button .bar3 {
+    top: 20px; }
+
+strong {
+  font-weight: 500; }
+
+h1, h2 {
+  width: fit-content; }
+
+/*# sourceMappingURL=base.css.map */
